@@ -1,13 +1,13 @@
-import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "./components/Header";
-import Search from "./components/Search";
+import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
+import Search from './components/Search';
 
 const UNSPLASH_KEY = process.env.REACT_APP_UNSPLASH_KEY;
 
 const App = () => {
   //useState to make this a controlled input
-  const [word, setWord] = useState("");
+  const [word, setWord] = useState('');
 
   const handleSearchSubmit = (e) => {
     // prevents the app from reloading once submit is clicked
@@ -25,7 +25,7 @@ const App = () => {
         console.log(err);
       });
 
-    setWord("");
+    setWord('');
   };
 
   return (
