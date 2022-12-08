@@ -1,9 +1,16 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
+const cardStyle = {
+  padding: '2rem 1rem',
+  marginBottom: '2rem',
+  backgroundColor: '#e9ecef',
+  borderRadius: '.3rem',
+};
+
 const Welcome = () => {
   return (
-    <Card class="jumbotron">
+    <Card style={cardStyle}>
       <Card.Body>
         <Card.Title class="display-4">Images Gallery</Card.Title>
         <Card.Text class="lead">
