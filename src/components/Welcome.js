@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap';
 
 const Welcome = () => {
   return (
-    <Card class="jumbotron m-3">
+    <Card class="jumbotron">
       <Card.Body>
         <Card.Title class="display-4">Images Gallery</Card.Title>
         <Card.Text class="lead">
