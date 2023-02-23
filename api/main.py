@@ -4,7 +4,7 @@ from flask import Flask, request
 from dotenv import load_dotenv
 from flask_cors import CORS
 
-load_dotenv(dotenv_path="./.env.local")
+load_dotenv(dotenv_path="api/.env.local")
 
 
 UNSPLASH_URL = "https://api.unsplash.com/photos/random"
@@ -26,10 +26,10 @@ app.config["DEBUG"] = DEBUG
 def new_image():
     word = request.args.get("query")
 
-    headers = {"Accept-Verson": "v1", "Authorization": "Client-ID " + UNSPLASH_KEY}
+    headers = {"Accept-Verson": "V1", "Authorization": "Client-ID " + UNSPLASH_KEY}
     params = {"query": word}
     response = requests.get(
-        url=UNSPLASH_URL, headers=headers, params=params, timeout=0.001
+        url=UNSPLASH_URL, headers=headers, params=params, timeout=100
     )
     data = response.json()
     return data

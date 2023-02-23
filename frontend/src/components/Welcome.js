@@ -12,8 +12,8 @@ const Welcome = () => {
   return (
     <Card style={cardStyle}>
       <Card.Body>
-        <Card.Title class="display-4">Images Gallery</Card.Title>
-        <Card.Text class="lead">
+        <Card.Title className="display-4">Images Gallery</Card.Title>
+        <Card.Text className="lead">
           This is a simple application that retrieves photos using Unsplash API.
           In order to start, enter any search term in the imput field.
         </Card.Text>
